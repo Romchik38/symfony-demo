@@ -16,6 +16,7 @@ class CacheController extends AbstractController
     ): Response
     {
         $result = $cache->get('some_key', function(ItemInterface $item){
+            $item->expiresAfter(3600);
             return 'Cache result';
         });
         return new Response($result);
