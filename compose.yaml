@@ -1,0 +1,7 @@
+# You can add other services your application may depend on here.
+
+services:
+  redis:
+    image: redis
+    ports:
+      - 6379:6379
