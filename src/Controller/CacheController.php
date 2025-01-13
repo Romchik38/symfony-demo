@@ -10,7 +10,7 @@ use Symfony\Contracts\Cache\ItemInterface;
 
 class CacheController extends AbstractController
 {
-    #[Route('/cache')]
+    #[Route('/cache', name: 'cache_index')]
     public function index(
         CacheInterface $cache
     ): Response

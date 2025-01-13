@@ -22,7 +22,7 @@
         {{ 'http_error_404.suggestion'|trans({ 'url': path('blog_index') })|raw }}
     </p>
     <ul class="list-group">Also you can visit:
-        <li class="list-group-item">Cache</li>
+        <li class="list-group-item"><a href="{{ path('cache_index') }}">Cache</a></li>
         <li class="list-group-item">Lacky number</li>
     </ul>
 {% endblock %}
